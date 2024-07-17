@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Mitra Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+<style>
+    body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    }
+    
+    .menu-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: url("menu-bg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.7;
+    }
+    
+    header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    header h1 {
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: #f39c12;
+    }
+    
+    header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    }
+    
+    main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    .menu {
+    background-color: rgba(38, 38, 38, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    }
+    
+    .menu h2 {
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #f39c12;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    }
+    
+    .menu-section {
+    margin-bottom: 40px;
+    }
+    
+    .menu-section h3 {
+    background-color: rgba(13, 13, 13, 0.9);
+    color: #f39c12;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 -20px 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    text-align: center;
+    }
+    
+    .menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #404040;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    }
+    
+    .menu-item:hover {
+    background-color: rgba(243, 156, 18, 0.1);
+    transform: scale(1.02);
+    }
+    
+    .menu-item h4 {
+    margin: 0;
+    font-size: 1.2em;
+    }
+    
+    .menu-item .price {
+    color: #f39c12;
+    font-weight: bold;
+    font-size: 1.2em;
+    }
+    
+    @media (max-width: 600px) {
+    .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    
+    .menu-item h4, .menu-item .price {
+    font-size: 1em;
+    }
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Fit Mitra</h1>
+        <p>Your go-to place for healthy and diet-friendly vegetarian food!</p>
+    </header>
+    <main>
+        <div class="menu-bg"></div>
+        <section class="menu">
+            <h2>Our Top Food Items</h2>
+            <div class="menu-section">
+                <h3>Breakfast</h3>
+                <div class="menu-item">
+                    <h4>Pan Seared Sea Bass</h4>
+                    <p class="price">₹450</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Avocado Toast with Eggs</h4>
+                    <p class="price">₹250</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Berry Detox Smoothie</h4>
+                    <p class="price">₹180</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Oatmeal with Fresh Berries</h4>
+                    <p class="price">₹150</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Vegetable Frittata</h4>
+                    <p class="price">₹200</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Spinach and Egg White Omelette</h4>
+                    <p class="price">₹220</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Greek Yogurt with Honey and Nuts</h4>
+                    <p class="price">₹180</p>
+                </div>
+            </div>
+            <div class="menu-section">
+                <h3>Lunch</h3>
+                <div class="menu-item">
+                    <h4>Protein-Packed Smoothie Bowl</h4>
+                    <p class="price">₹150</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Grilled Vegetable Wrap</h4>
+                    <p class="price">₹200</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Stuffed Bell Peppers</h4>
+                    <p class="price">₹250</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Quinoa Salad with Avocado</h4>
+                    <p class="price">₹220</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Vegetable Tofu Stir Fry</h4>
+                    <p class="price">₹300</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Chickpea and Spinach Salad</h4>
+                    <p class="price">₹200</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Roasted Veggie Buddha Bowl</h4>
+                    <p class="price">₹300</p>
+                </div>
+            </div>
+            <div class="menu-section">
+                <h3>Dinner</h3>
+                <div class="menu-item">
+                    <h4>Avocado Toast with Eggs</h4>
+                    <p class="price">₹250</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Vegetable Tofu Fry</h4>
+                    <p class="price">₹300</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Lentil and Spinach Curry</h4>
+                    <p class="price">₹200</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Mussels Soup</h4>
+                    <p class="price">₹350</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Veggie-Packed Buddha Bowl</h4>
+                    <p class="price">₹300</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Chickpea and Spinach Stew</h4>
+                    <p class="price">₹220</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Grilled Vegetable Skewers</h4>
+                    <p class="price">₹270</p>
+                </div>
+            </div>
+            <div class="menu-section">
+                <h3>Protein and Healthy Shakes</h3>
+                <div class="menu-item">
+                    <h4>Berry Detox Smoothie</h4>
+                    <p class="price">₹180</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Protein-Packed Smoothie Bowl</h4>
+                    <p class="price">₹150</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Green Protein Shake</h4>
+                    <p class="price">₹200</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Banana Almond Smoothie</h4>
+                    <p class="price">₹180</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Mango Chia Seed Smoothie</h4>
+                    <p class="price">₹220</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Peanut Butter Protein Shake</h4>
+                    <p class="price">₹200</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Chocolate Avocado Smoothie</h4>
+                    <p class="price">₹250</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

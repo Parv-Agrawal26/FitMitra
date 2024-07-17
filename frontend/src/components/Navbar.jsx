@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const openNewPage = () => {
-    window.open("../../../../chatbot.html", "_blank");
+    window.open("/chatbot.html", "_blank");
   };
   return (
     <>

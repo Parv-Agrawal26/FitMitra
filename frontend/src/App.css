@@ -921,7 +921,7 @@ nav .hamburger {
 /******************* NOT FOUND PAGE STYLING **************/
 /**********************************************************************************************************************/
 footer {
-  background: #f9fbf2;
+  background: linear-gradient(186deg, #1e1e1e, #303030);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -953,24 +953,30 @@ footer .container .banner:first-child::after {
   bottom: 0;
   width: 100%;
   height: 3px;
-  background: #111;
+  background: #fff;
+  /* Changed the line color to white */
 }
 
 footer .container .banner:first-child .left {
   font-size: 1.75rem;
+  color: #fff;
+  /* Changed text color to white */
 }
 
 footer .container .banner:last-child .left {
   font-size: 18px;
-  color: #333;
+  color: #ccc;
+  /* Adjusted text color */
 }
 
 footer .container .banner:last-child .left a {
-  color: #333;
+  color: #ccc;
+  /* Adjusted link color */
 }
 
 footer .container .banner:last-child .left a:hover {
-  color: #111;
+  color: #fff;
+  /* Adjusted link hover color */
   transition: 0.3s;
   font-weight: bold;
 }
@@ -978,7 +984,8 @@ footer .container .banner:last-child .left a:hover {
 footer .container .banner .right {
   text-align: end;
   font-size: 18px;
-  color: #333;
+  color: #ccc;
+  /* Adjusted text color */
 }
 
 @media (max-width: 1520px) {
@@ -1016,7 +1023,7 @@ footer .container .banner .right {
   padding: 30px 20px;
   justify-content: center;
   align-items: center;
-  background: url(/reserve.svg);
+  background: linear-gradient(186deg, #1e1e1e, #303030), url(/reserve.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -1035,7 +1042,7 @@ footer .container .banner .right {
 
 .reservation .container .banner .reservation_form_box {
   width: 400px;
-  background: #fff;
+  background: #f9fbf2;
   height: 100%;
   padding: 20px;
   box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
@@ -1206,7 +1213,7 @@ footer .container .banner .right {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background: url(/background.svg);
+  background: linear-gradient(186deg, #1e1e1e, #303030), url(/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
