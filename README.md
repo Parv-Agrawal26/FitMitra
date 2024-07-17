@@ -26,7 +26,7 @@ Fit Mitra is a project developed during industrial training by FLAMES - angaar b
 2. Anurag Gautam
 3. Shivam Shastri
 4. Sunil Kumar
-5. Akash Kumar
+5. Akash Sharma
 
 Special thanks to FLAMES - angaar batch for the industrial training and support during the development of this project.
 
