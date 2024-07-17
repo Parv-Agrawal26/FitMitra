@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Mitra Fitness Coach</title>
+    <link rel="stylesheet" href="chatbot_styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Fit Mitra Fitness Coach</h1>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <div class="logo">
+                <img src="./frontend/public/logo.png" alt="Fit Mitra Logo">
+            </div>
+            <h2>Ask Your Fitness Coach</h2>
+            <form id="aiForm">
+                <label for="prompt">Enter your problem (related to fitness):</label><br>
+                <textarea id="prompt" name="prompt" rows="4" cols="50"></textarea><br>
+                <button type="submit">Get Response</button>
+            </form>
+        </section>
+        <section class="response-section">
+            <h2>Response:</h2>
+            <p id="response"></p>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('aiForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const prompt = document.getElementById('prompt').value;
+
+            try {
+                const response = await fetch('http://localhost:3001/generate', {    
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ prompt }),
+                });
+
+                const data = await response.json();
+                document.getElementById('response').innerText = data.text;
+            } catch (error) {
+                console.error('Error generating content:', error);
+                document.getElementById('response').innerText = 'An error occurred. Please try again.';
+            }
+        });
+    </script>
+</body>
+
+</html>
