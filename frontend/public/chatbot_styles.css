@@ -1,7 +1,5 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: url("chatbot-bg.jpg");
-    background-size: cover;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -10,6 +8,17 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+}
+
+.bg{
+    height: 100vh;
+    width: 100vw;
+    background: url("chatbot-bg.jpg");
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
 }
 
 header {
@@ -120,6 +129,7 @@ footer {
     position: absolute;
     top: 60px;
     left: -100px;
+    position: fixed;
 }
 
 .logo img {
