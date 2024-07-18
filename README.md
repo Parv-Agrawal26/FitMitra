@@ -16,12 +16,13 @@ Fit Mitra is a project developed during industrial training by FLAMES - angaar b
 
 1. Clone the repository.
 2. Install the package.json files for the entire project.
-3. Run node chatbot_server.js in the terminal.
-4. In the frontend folder's integrated terminal, run npm run dev.
-5. In the backend folder's integrated terminal, run npm run dev.
-6. Set the MongoDB Atlas database link and password in the config.env file.
-7. Start the site on the localhost frontend server port.
-8. Now you can make reservations, talk to the fitness coach, and explore the menu.
+3. Set your own api key for google gemini in chatbot_server.js.
+4. Run node chatbot_server.js in the terminal.
+5. In the frontend folder's integrated terminal, run npm run dev.
+6. In the backend folder's integrated terminal, run npm run dev.
+7. Set the MongoDB Atlas database link and password in the config.env file.
+8. Start the site on the localhost frontend server port.
+9. Now you can make reservations, talk to the fitness coach, and explore the menu.
 
 
 ## Credits
