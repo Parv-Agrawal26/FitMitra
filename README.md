@@ -10,7 +10,7 @@ Fit Mitra is a project developed during industrial training by FLAMES - angaar b
 - **Frontend**: HTML, CSS, JavaScript, React.js
 - **Database**: MongoDb Atlas
 - **Version Control**: Git, GitHub
-- Mltiple libraries and packages such as google api etc.
+- Multiple libraries and packages such as google api etc.
 
 ## Installation
 
